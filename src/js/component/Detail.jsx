@@ -19,10 +19,31 @@ const Detail = () => {
   useEffect(() => {
     search();
   }, [store.characters, store.planets]);
+  console.log(store.characters)
+  console.log(store.planets)
 
   return (
-    <div>
-      <h1>Detail {detail?.properties?.name}</h1>
+    <div className="d-flex justify-content-center">
+      <div className="card">
+        <div className="card-header">
+          <h1 className="text-danger"> {detail?.properties?.name}</h1>
+        </div>
+        <div className="card-body">
+          <h1> {detail?.properties?.gender}</h1>
+          <h1> {detail?.properties?.eye_color}</h1>
+          <h1> {detail?.properties?.birth_year}</h1>
+          <h1> {detail?.properties?.height}</h1>
+          <h1> {detail?.properties?.climate}</h1>
+          <h1> {detail?.properties?.diameter}</h1>
+          <h1> {detail?.properties?.population}</h1>
+          <h1> {detail?.properties?.rotation_period}</h1>
+        </div>
+      </div>
+
+
+
+
+
     </div>
   );
 };
