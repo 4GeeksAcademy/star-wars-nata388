@@ -43,6 +43,12 @@ const getState = ({ getStore, getActions, setStore }) => {
         }]
         setStore ({favorit:newfavoritos})
       },
+      eliminarFavoritos(id){
+        let store = getStore();
+        let fav = store.favorit;
+        let favActualizado = fav.filter((item)=>item.id!==id);
+        setStore ({favorit:favActualizado})
+      }
     },
   };
 };

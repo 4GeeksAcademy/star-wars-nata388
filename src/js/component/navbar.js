@@ -18,11 +18,11 @@ export const Navbar = () => {
               data-bs-toggle="dropdown"
               aria-expanded="false"
             >
-              {/* Favorites 0  */}
+              Favorites 
             </button>
             <ul className="dropdown-menu">
             {store.favorit.map((item) => {
-                return <li><a className="dropdown-item"> <span onClick={() => { actions.eliminaFavorito(item.id) }} className={"fa fa-trash"}></span>{item.name}</a></li>
+                return <li><a className="dropdown-item"> <span onClick={() => { actions.eliminarFavoritos(item.id) }} className={"fa fa-trash"}></span>{item.name}</a></li>
               })}
              
             </ul>

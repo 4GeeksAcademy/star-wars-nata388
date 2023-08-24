@@ -37,7 +37,7 @@ export const Home = () => {
                   >
                     Learn more!
                   </Link>
-                  <button className="btn btn-outline-warning" onClick={()=>{actions.getFavoritos(item.properties.name)}}>c</button>
+                  <button className="btn btn-outline-warning" onClick={()=>{actions.getFavoritos(item.properties.name)}}><i className="fa fa-heart text-warning" /></button>
                 </div>
               </div>
             );
@@ -71,7 +71,7 @@ export const Home = () => {
                   >
                     Learn more!
                   </Link>
-                  <button className="btn btn-outline-warning" onClick={()=>{actions.getFavoritos(item.properties.name)}}>c</button>
+                 <button className="btn btn-outline-warning" onClick={()=>{actions.getFavoritos(item.properties.name)}}><i className="fa fa-heart text-warning" /></button>
                 </div>
               </div>
             );
